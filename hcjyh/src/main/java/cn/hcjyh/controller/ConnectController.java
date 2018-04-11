@@ -1,4 +1,4 @@
-package cn.hcjyh;
+package cn.hcjyh.controller;
 
 import org.springframework.boot.*;
 import org.springframework.boot.autoconfigure.*;
@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 @EnableAutoConfiguration
-public class SampleController {
+public class ConnectController {
 
-    @RequestMapping("/test")
+    @RequestMapping("/connect")
     @ResponseBody
-    String home() {
+    String connect() {
         return "Hello World!";
     }
 
-    public static void main(String[] args) throws Exception {
-        SpringApplication.run(SampleController.class, args);
-    }
+//    public static void main(String[] args) throws Exception {
+//        SpringApplication.run(ConnectController.class, args);
+//    }
 }
